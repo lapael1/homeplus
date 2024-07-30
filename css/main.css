@@ -16,11 +16,10 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
-    
 }
 a{
     text-decoration: none;
+    color: #222;
 }
 img{
     vertical-align: middle;
@@ -40,3 +39,44 @@ img{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+
+
+/* 스와이퍼 네비게이션 버튼 */
+.sw-bt{
+    width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  font-size: 0;
+  cursor: pointer;
+}
+.sw-bt::before {
+    content: "";
+    width: 8px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 4px);
+    background: url("../image/banner/slider_arrow.svg") no-repeat center;
+  }
+  .sw-prev::before {
+    transform: scaleX(-100%);
+  }
+  .sw-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+  .sw-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 99;
+  }
