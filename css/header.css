@@ -1,1 +1,85 @@
 @charset "utf-8";
+/* 헤더 */
+.header{
+    position: relative;
+    display: block;
+    border-bottom: 2px solid rgb(223, 0, 17);
+}
+.header .inner{
+    padding: 0;
+    height: 185px;
+}
+/* header-up */
+.member-list{
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 12px;
+    padding-top: 8px;
+    color: rgb(102, 102, 102);
+cursor: pointer;
+}
+/* 헤더중단 */
+
+/* 헤더중단좌측 */
+.header-mid-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* 로고 */
+.logo{
+    width: 132.14px;
+    height: 50px;
+    background: url("../header/images/default_logo.svg")no-repeat center / contain;
+}
+/* 호버버튼 */
+
+/* 검색창 */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 455px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .search-text {
+    width: 400px;
+    border: 0;
+    outline: 0;
+  }
+  .search-text::placeholder {
+    color: #a2a2a2;
+    font-size: 14px;
+  }
+  .search-bt {
+    width: 21px;
+    height: 21px;
+    background: url("../header/images/search_pc-icon.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+  }
+  .search-reset {
+    width: 16px;
+    height: 16px;
+    background: url("../header/images/icon_search_delete.png") no-repeat center / contain; 
+    border: none;
+    font-size: 0;
+  }
+
+  /* 자주구매/장바구니/마이페이지 */
+.member-bt{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 12px;
+}
+.{
+  background: url("../header/images/icon-favorite.svg");
+}
