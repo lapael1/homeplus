@@ -1,1 +1,24 @@
 @charset "utf-8";
+.curation{
+    width: 100%;
+}
+.curation_products > ul{
+    display: flex;
+    
+}
+.curation_products > ul > li{
+    width: calc(100% / 4 - 10px);
+    padding: 0 20px;
+}
+.cur_thumb{
+    width: 100%;
+    position: relative;
+}
+.cur_thumb::after{
+    content: url("../image/btn_card_general.png");
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    right: 0;
+    bottom: 0;
+}
