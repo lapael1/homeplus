@@ -1,1 +1,35 @@
 @charset "utf-8";
+.promotion .section-top{
+    display: none;
+}
+.sw-banner a{
+    display: inline-block;
+
+}
+
+/* pagination */
+.sw-banner-control{
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.sw-banner a img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner-slide .sw-prev {
+    position: absolute;
+    top: 28%;
+    left: 24.8%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+  .banner-slide .sw-next {
+    position: absolute;
+    top: 28%;
+    right: 24.8%;
+    transform: translate(50%, -50%);
+    z-index: 99;
+  }
