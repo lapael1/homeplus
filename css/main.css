@@ -3,6 +3,7 @@
 @import url("header.css");
 @import url("banner.css");
 @import url("minibanner.css");
+@import url("quickmenu.css");
 @import url("sajago.css");
 @import url("event.css");
 @import url("recommend.css");
@@ -66,17 +67,5 @@ img{
   .sw-prev::before {
     transform: scaleX(-100%);
   }
-  .sw-prev {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-  }
-  .sw-next {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-    z-index: 99;
-  }
+  
+  

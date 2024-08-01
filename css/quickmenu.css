@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 퀵메뉴 */
+.quickmenu {
+  position: relative;
+  display: block;
+  width: 1000px;
+  height: 133.03px;
+  margin-bottom: 30px;
+}
+.quickmenu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 85px;
+    padding: 15px 0px ;
+}
+
+.quickmenu li a {
+  display: block;
+  padding: 0px 6px;
+}
+.quickmenu .thumb img {
+  width: 100%;
+  height: 100%;
+}
+.quickmenu .thumb {
+  display: block;
+  margin: 0 auto;
+  width: 57px;
+  height: 57px;
+}
+.quickmenu .quickmenu-name {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
+  ext-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  overflow-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.quickmenu li {
+    width: 10%;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    vertical-align: top;
+}
