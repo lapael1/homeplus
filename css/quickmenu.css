@@ -34,7 +34,7 @@
   margin-top: 10px;
   line-height: 1.18;
   letter-spacing: -0.5px;
-  ext-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: normal;
   overflow-wrap: break-word;

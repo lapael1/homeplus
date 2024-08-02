@@ -21,14 +21,14 @@
 }
 .banner-slide .sw-prev {
     position: absolute;
-    top: 28%;
+    top: 26%;
     left: 24.8%;
     transform: translate(-50%, -50%);
     z-index: 99;
   }
   .banner-slide .sw-next {
     position: absolute;
-    top: 28%;
+    top: 26%;
     right: 24.8%;
     transform: translate(50%, -50%);
     z-index: 99;

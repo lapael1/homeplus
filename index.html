@@ -9,8 +9,9 @@
     <meta property="og:site_name" content="홈플러스" data-react-helmet="true" />
     <meta property="og:type" content="website" data-react-helmet="true" />
     <meta property="og:type" content="website" data-react-helmet="true" />
-    <meta property="og:image" content="https://mfront.homeplus.co.kr/static/images/og/default.png" />
+    <meta property="og:image" content="https://homeplus-beta.vercel.app/image/banner/banner%204.png" />
     <meta property="og:image:type" content="image/png" data-react-helmet="true" />
+    <meta property="og:url" content="https://homeplus-beta.vercel.app/" />
     <meta property="og:image:width" content="750" />
     <meta property="og:image:height" content="750" />
     <!-- 파비콘적용 -->
@@ -48,6 +49,7 @@
     <!-- 전체레이아웃 -->
 
     <div class="wrap">
+      
       <!-- 헤더 -->
       <header class="header">
         <div class="inner">
@@ -334,24 +336,56 @@
       <!-- 호버 메뉴 탭버튼 -->
 <div class="sajagotapbt">
   <button type="button" class="selected css-16e1ttt"><span class="text">MD추천</span></button>
-  <button type="button" class=" css-16e1ttt"><span class="text">신선한</span></button>
-  <button type="button" class=" css-16e1ttt"><span class="text">식품</span></button>
-  <button type="button" class=" css-16e1ttt"><span class="text">간편한</span></button>
-  <button type="button" class=" css-16e1ttt"><span class="text">가공필템</span></button>
-  <button type="button" class=" css-16e1ttt"><span class="text">생활용품</span></button>
+  <button type="button" class=" tapBtn"><span class="text">신선한</span></button>
+  <button type="button" class=" tapBtn"><span class="text">식품</span></button>
+  <button type="button" class=" tapBtn"><span class="text">간편한</span></button>
+  <button type="button" class=" tapBtn"><span class="text">가공필템</span></button>
+  <button type="button" class=" tapBtn"><span class="text">생활용품</span></button>
 </div>
+
       <!-- 사자GO 품목 -->
+
+      <!-- 사자GO 새로고침bar -->
+    <div class="refreshBtnWrapper refreshBar"><button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span></button></div>
     </div>
     </section>
+    <!-- 자주 찾게 되는 그 행사 -->
+     <section class="event">
+      <div class="inner">
+        <div class="event-top">
+          <h2>자주 찾게 되는 그 행사</h2>
+        </div>
+        <div class="event-bar">
+          <button type="button" class="eventBtn selected">1+1</button>
+          <button type="button" class="eventBtn">천원의행복</button>
+          <button type="button" class="eventBtn">50%</button>
+        </div>
+<!--event 품목 -->
+<!-- 1+1 bar -->
+<div class="oneplonebar">
+  <button type="button" class="oneplonebtn"><strong>1+1</strong> 더 많은 상품 보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span></button></div>
+    </div>
+
+      </div>
+     </section>
+     <!-- recommend 추천상품 -->
+
+
+     <!-- 오늘의 결제 혜택 -->
+
+
+
+
+     
       <!-- 놓치면 후회할 쇼핑 큐레이션 -->
       <div class="curation">
         <div class="inner">
           <h2>놓치면 후회할 쇼핑 큐레이션</h2>
           <div class="curation_btn">
-            <button class="deli">홈플델리</button>
-            <button class="ice">아스크림</button>
-            <button class="wash">향기뿜뿜</button>
-            <button class="clean">청소해방</button>
+            <button class="selected">홈플델리</button>
+            <button class="curationBtn">아스크림</button>
+            <button class="curationBtn">향기뿜뿜</button>
+            <button class="curationBtn">청소해방</button>
           </div>
           <div class="curation_products">
             <!-- 델리 -->
