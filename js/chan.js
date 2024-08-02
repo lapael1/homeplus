@@ -44,3 +44,7 @@ window.onload = function () {
     },
   });
 };
+// 오늘의결제 스와이퍼
+//   const swPayment = new Swiper(".sw-payment", {
+
+//   })

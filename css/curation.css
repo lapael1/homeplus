@@ -129,8 +129,13 @@
   margin-left: 12px;
 }
 
+
 .deli_pro > li:last-child {
   margin-right: calc(100% / 4 + 3.3px);
+=======
+.cur_popul li:last-child{
+    margin-left: 12px;
+
 }
 
 /* 탭버튼 */
