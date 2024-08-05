@@ -86,8 +86,8 @@
   color: #222;
   font-size: 14px;
 }
-.cur_red{
-    color: #df0011;
+.cur_red {
+  color: #df0011;
 }
 .cur_detail p:nth-child(2) {
   margin-top: 10px;
@@ -129,13 +129,11 @@
   margin-left: 12px;
 }
 
-
 .deli_pro > li:last-child {
   margin-right: calc(100% / 4 + 3.3px);
-=======
-.cur_popul li:last-child{
-    margin-left: 12px;
-
+}
+.cur_popul li:last-child {
+  margin-left: 12px;
 }
 
 /* 탭버튼 */
