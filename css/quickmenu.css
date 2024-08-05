@@ -3,11 +3,11 @@
 .quickmenu {
   position: relative;
   display: block;
-  width: 1000px;
   height: 133.03px;
   margin-bottom: 30px;
 }
 .quickmenu-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
