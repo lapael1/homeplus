@@ -38,7 +38,9 @@
     <script src="js/main.js"></script>
     <script src="js/chan.js"></script>
     <script src="js/jin.js"></script>
-
+<style>
+  
+</style>
     <title>2024 홈플러스</title>
   </head>
   <body>
@@ -512,10 +514,12 @@
         <div class="event-top">
           <h2>자주 찾게 되는 그 행사</h2>
         </div>
+        <div class="eventbar_wrap">
         <div class="event-bar">
           <button type="button" class="eventBtn selected">1+1</button>
           <button type="button" class="eventBtn">천원의행복</button>
           <button type="button" class="eventBtn">50%</button>
+        </div>
         </div>
 
 
@@ -544,7 +548,8 @@
 <!--event 품목 -->
 <!-- 1+1 bar -->
 <div class="oneplonebar">
-  <button type="button" class="oneplonebtn"><strong>1+1</strong> 더 많은 상품 보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span></button></div>
+  <a href="#" class="oneplonelink"><button type="button" class="oneplonebtn"><strong>1+1</strong> 더 많은 상품 보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span><i><img src="image/event/ico_fixed_event_right_arrow2x.png" alt="" class="event_more"></i></button></a>
+  </div>
     </div>
 
       </div>
@@ -565,7 +570,12 @@
     <div class="payment-top">
       <h2>오늘의 결제 혜택</h2>
     </div>
-        <div class="payment-wrap">
+    <!-- 스와이퍼 전체영역 -->
+     <div class="payment-slide">
+        <!-- 결제혜택 스와이퍼 -->
+         <div class="swiper sw-payment">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
           <div class="payment-list-wrap pay1">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_hppay 1.png" alt="홈플러스5%">
@@ -582,7 +592,8 @@
 </div>
             </a>
           </div>
-        
+          </div>
+        <div class="swiper-slide">
           <div class="payment-list-wrap pay2">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_hppay 1.png" alt="홈플러스50%">
@@ -599,7 +610,8 @@
 </div>
             </a>
           </div>
-        
+        </div>
+        <div class="swiper-slide">
           <div class="payment-list-wrap pay3">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_hppay 1.png" alt="홈플러스">
@@ -616,7 +628,8 @@
 </div>
             </a>
           </div>
-        
+        </div>
+        <div class="swiper-slide">  
           <div class="payment-list-wrap pay4">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_kbcard 1.png" alt="국민카드">
@@ -633,7 +646,8 @@
 </div>
             </a>
           </div>
-        
+        </div>
+        <div class="swiper-slide">
           <div class="payment-list-wrap pay5">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_samsung 1.png" alt="삼성카드">
@@ -650,7 +664,8 @@
 </div>
             </a>
           </div>
-        
+        </div>
+        <div class="swiper-slide">
           <div class="payment-list-wrap pay6">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_kakao 1.png" alt="카카오페이">
@@ -667,7 +682,8 @@
 </div>
             </a>
           </div>
-        
+        </div>
+        <div class="swiper-slide">
           <div class="payment-list-wrap pay7">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_toss 1.png" alt="토스페이">
@@ -684,7 +700,8 @@
 </div>
             </a>
           </div>
-        
+        </div>
+        <div class="swiper-slide">
           <div class="payment-list-wrap pay8">
             <a href="#" class="payment_a">
               <img src="image/payment/card_logo_6 1.png" alt="6대카드">
@@ -701,6 +718,10 @@
 </div>
             </a>
           </div>
+          </div>
+        </div>
+</div>
+        </div>
         </div>
       </div>
 </section>

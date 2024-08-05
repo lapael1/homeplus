@@ -12,23 +12,29 @@
     position: relative;
     text-align: center;
     display: none;
+    
 }
 .sw-banner a img{
     width: 100%;
     height: auto;
+
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.banner-slide{
+    position: relative;
+    
+}
 .banner-slide .sw-prev {
     position: absolute;
-    top: 26%;
+    top: 50%;
     left: 24.8%;
     transform: translate(-50%, -50%);
     z-index: 99;
   }
   .banner-slide .sw-next {
     position: absolute;
-    top: 26%;
+    top: 50%;
     right: 24.8%;
     transform: translate(50%, -50%);
     z-index: 99;

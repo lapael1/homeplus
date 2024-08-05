@@ -3,15 +3,8 @@ window.onload = function () {
   const swBanner = new Swiper(".sw-banner", {
     slidesPerView: 4,
     spaceBetween: 10,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-    },
-
+     
+   
     navigation: {
       nextEl: ".banner .sw-next",
       prevEl: ".banner .sw-prev",
@@ -43,8 +36,10 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+  // 결제혜택 스와이퍼
+  const swPayment = new Swiper(".sw-payment", {
+    slidesPerView: 6.3,
+    spaceBetween: 10,
+  });
 };
-// 오늘의결제 스와이퍼
-//   const swPayment = new Swiper(".sw-payment", {
 
-//   })
