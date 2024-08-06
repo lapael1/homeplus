@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* 공동 */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+html, body {
+    height: 100%;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: 'NanumBarunGothic', Dotum, Gulim, Tahoma, Verdana, AppleGothic, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666;
+    word-spacing: 0.1em;
+    display: block;
+    margin: auto;
+}
+a:link, a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+a{
+    color: inherit;
+    vertical-align: middle;
+}
+/* 홈플로고 */
+#ui-header {
+    height: 120px;
+    margin: 0 -1px;
+    /* border-bottom: 1px solid #ddd; */
+    background-color: #f4f4f4;
+    width: 100%;
+}
+#ui-header .tit-page.type-fixed {
+    position: static;
+    border-bottom: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+#ui-header h1, #ui-header h1.hide {
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 10px;
+}
+#ui-header h1 a {
+    display: inline-block;
+    width: 186px;
+    height: 37px;
+    background: url(/image/login/images/logo_red.png) no-repeat;
+    background-size: auto;
+    font-size: 0;
+    color: transparent;
+}
+#ui-header .back, #ui-header .home {
+    display: none;
+}
+/* mainwrap */
+#mainwrap {
+    position: relative;
+    width: 480px;
+    min-height: 720px;
+    margin: 0 auto 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+/* 휴대폰/아이디 로그인 */
+.login-top .login{
+    width: 480px;
+    /* margin: 0; */
+}
+.login{
+    overflow: hidden;
+    margin: 0 -15px;
+}
+.login li {
+    float: left;
+    width: 50%;
+}
+.login-top .login li a {
+    height: 70px;
+    font-size: 18px;
+    line-height: 70px;
+    background: #fff;
+    border-left: none;
+}
+.login-top .login li.on a {
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+.login .on a {
+    position: relative;
+    z-index: 1;
+    border-bottom-color: #fff;
+    background-color: #fff;
+    color: #111;
+}
+.login li a {
+    display: block;
+    text-align: center;
+}
