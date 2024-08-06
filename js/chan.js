@@ -3,8 +3,7 @@ window.onload = function () {
   const swBanner = new Swiper(".sw-banner", {
     slidesPerView: 4,
     spaceBetween: 10,
-     
-   
+
     navigation: {
       nextEl: ".banner .sw-next",
       prevEl: ".banner .sw-prev",
@@ -36,12 +35,19 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+  // 추천 상품 스와이퍼
+  const swRecommend = new Swiper(".sw-recommend", {
+    slidesPerView: 5.5,
+    spaceBetween: 15,
+  });
+
   // 결제혜택 스와이퍼
   const swPayment = new Swiper(".sw-payment", {
     slidesPerView: 6.3,
     spaceBetween: 10,
   });
 };
+
 window.addEventListener("load", function () {
   AOS.init();
   // gotop바로가기 기능
