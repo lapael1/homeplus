@@ -191,3 +191,11 @@
     margin-right: calc(100% / 4 + 3.3px);
   }
    */
+
+   /* 제품 카테고리 */
+  #sajago_food, #sajago_fresh, #sajago_handy, #sajago_house, #sajago_industry{
+    display: none;
+  }
+  /* .sajago_food, .sajago_fresh, .sajago_handy, .sajago_house, .sajago_industry{
+    display: none;
+  } */

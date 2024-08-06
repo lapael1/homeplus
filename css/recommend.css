@@ -1,1 +1,134 @@
 @charset "utf-8";
+.recommend {
+  line-height: 1.2;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+.recommend h2 {
+  font-size: 20px;
+  color: #222;
+  font-weight: bold;
+}
+.recommend h2 span{
+  color: #df0011;
+}
+.recommend-top {
+  width: 100%;
+  position: relative;
+}
+.recommend .sw-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+.recommend .sw-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 9999;
+  transform: translate(50%, -50%);
+}
+.recommend_swiper {
+  width: 100%;
+  margin-top: 20px;
+}
+.recom_thumb {
+  width: 100%;
+  position: relative;
+}
+.recom_thumb img {
+  width: 100%;
+  border-radius: 8px;
+}
+.recom_thumb::after {
+  content: "";
+  background-image: url("../image/btn_card_general.png");
+  background-size: cover;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  right: 0;
+  bottom: 0;
+}
+
+.recom-dis {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.recom-dis span {
+  font-size: 14px;
+  color: #222;
+  font-weight: bold;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+.recom_event {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.recom_event li {
+  background-color: #df0011;
+  color: white;
+  padding: 0 6px;
+  height: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  line-height: 20px;
+  margin-right: 3px;
+}
+.recom_detail {
+  margin-top: 12px;
+}
+.recom_detail {
+  color: #222;
+  font-size: 14px;
+}
+.recom_red {
+  color: #df0011;
+}
+.recom_detail p:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.recom_discount {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+}
+.recom_discount img {
+  margin-left: 5px;
+  width: 14px;
+}
+.recom_price {
+  font-size: 18px;
+  font-weight: 500;
+}
+.recom_price > span:last-child {
+  font-size: 12px;
+}
+.recom_rate {
+  color: #df0011;
+}
+.recom_popul {
+  margin-top: 16px;
+  display: flex;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #999;
+}
+.recom_popul img {
+  height: 12px;
+}
+.recom_popul li:first-child {
+  color: #333;
+}
