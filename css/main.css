@@ -44,33 +44,33 @@ html.active {
   margin: 0 auto;
 }
 
-}
 /* 탑버튼 */
+
 /* gotop */
 .gotop {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 9999;
-    width: 45px;
-    height: 45px;
-    background-color: #df0011;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 20px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-  }
-  .gotop.active {
-    visibility: visible;
-    opacity: 1;
-  }
-  .gotop.active-footer {
-    bottom: 380px;
-  }
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  background-color: #df0011;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.gotop.active {
+  visibility: visible;
+  opacity: 1;
+}
+.gotop.active-footer {
+  bottom: 380px;
+}
 
 
 

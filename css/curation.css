@@ -194,14 +194,14 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 } */ 
-.curtapbt{
+/* .curtapbt{
 width: 1000px;
     height: 60px;
     display: flex;
     gap: 5px;
     align-items: center;
-}
-.curtapbt > .tapBtn1{
+} */
+.curation_btn > .curationBtn{
   position: relative;
   margin-left: 8px;
   padding: 10px 10px;
@@ -214,7 +214,7 @@ width: 1000px;
   white-space: nowrap;
   text-align: center;
 }
-.curtapbt > button{
+.curation_btn > button{
   color: rgb(0, 0, 0);
   border: 0px;
   /* background: none; */
@@ -223,9 +223,32 @@ width: 1000px;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.tapBtn1.active {
+/* 액티브 시 나타날 효과 */
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.cur__item {
+  padding: 0.6rem 0.8rem;
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.cur__item.active {
   display: inline-block;
-  border: 1px solid #b81c0f;
-  background-color: #b81c0f;
+  border: none;
+  background-color: #000000;
   color: #fff;
+  font-weight: bold;
+}
+.cur__content-wrapper {
+  padding: 1rem
+}
+.cur__content {
+  display: none;
+}
+.cur__content.active {
+  display: block;
 }
