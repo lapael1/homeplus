@@ -55,6 +55,7 @@
   outline: 0px;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
 .tab {
   display: flex;
   align-items: center;
@@ -120,15 +121,10 @@
 }
 .sajago_products > ul {
   display: flex;
-
-
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .sajago_products > #sajago_fresh{
   display: flex;
   justify-content: space-between;
@@ -262,7 +258,7 @@
 #sajago_industry {
   display: none;
 }
-<
+
 /* #sajago_fresh,#sajago_food.active{
   display: block;
 } */
