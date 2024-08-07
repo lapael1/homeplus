@@ -53,33 +53,6 @@
     <!-- AOS 적용 js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <style>
-      .sajagotapbt button:hover,
-      .sajagotapbt button.active {
-        background-color: rgb(51, 51, 51);
-        color: #fff;
-        font-weight: bold;
-        position: relative;
-        border-radius: 20px;
-        letter-spacing: -0.38px;
-        white-space: nowrap;
-        font-size: 15px;
-        transition: all 0.2s;
-      }
-      .curtapbt button:hover,
-      .curtapbt button.active {
-        background-color: rgb(51, 51, 51);
-        color: #fff;
-        font-weight: bold;
-        position: relative;
-        border-radius: 20px;
-        letter-spacing: -0.38px;
-        white-space: nowrap;
-        font-size: 15px;
-        transition: all 0.2s;
-      }
-    </style>
-
     <title>2024 홈플러스</title>
   </head>
   <body>
@@ -416,1110 +389,1156 @@
         <div class="inner">
           <!-- 사자go logo -->
           <div class="sajagologo"></div>
-          <!-- 호버 메뉴 탭버튼 -->
-          <div class="sajagotapbt">
-            <button type="button" class="selected css-16e1ttt"><span class="text">MD추천</span></button>
-            <button type="button" class="tapBtn"><span class="text">신선한</span></button>
-            <button type="button" class="tapBtn"><span class="text">식품</span></button>
-            <button type="button" class="tapBtn"><span class="text">간편한</span></button>
-            <button type="button" class="tapBtn"><span class="text">가공필템</span></button>
-            <button type="button" class="tapBtn"><span class="text">생활용품</span></button>
-          </div>
+          <!-- 사자고 탭버튼 -->
+          <ul class="tab">
+            <li class="tab__item active" id="tab1">MD 추천</li>
+            <li class="tab__item" id="tab2">신선한</li>
+            <li class="tab__item" id="tab3">식품</li>
+            <li class="tab__item" id="tab4">간편한</li>
+            <li class="tab__item" id="tab5">가공필템</li>
+            <li class="tab__item" id="tab6">생활용품</li>
+          </ul>
 
-          <!-- 사자GO 품목 -->
-          <div class="sajago_products">
-            <ul id="sajago_md">
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 1.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">과일 3만↑5천P적립<br /> </span>제주 하우스 밀감 1.4KG(박스)
-                    </p>
-                    <p>
-                      <span class="sajago_discount">19,980<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 9,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 2.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                      <li>신상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"> </span>스페인산 냉삼겹 1KG(봉)/돼지고기</p>
-                    <p>
-                      <span class="sajago_discount">19,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 9,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 3.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">★딱! ! 하루특가★<br /> </span>프리미엄 고시히카리 10KG(포)
-                    </p>
-                    <p>
-                      <span class="sajago_discount">49,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">40%</span> 29,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 4.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"> </span>힘을내라 구운란 30구</p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span> 8,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 5.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"> </span>농협목우촌 주부9단 오리 훈제 슬라이스</p>
-                    <p><span class="sajago_discount">13,990</span></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">28%</span> 9,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 6.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">3개 구매시 9,990원<br /> </span>해태 오예스 360G
-                    </p>
+          <!-- 큐레이션 탭 내용 영역 => 사자고 각 탭버튼 마다 사진다르게 배치해야함!! -->
+          <div class="tab__content-wrapper">
+            <!-- MD추천 -->
+            <div id="tab1" class="tab__content active">
+              <!-- 상품사진 -->
+              <div class="sajago_products">
+                <ul id="sajago_md">
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 1.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">과일 3만↑5천P적립<br /> </span>제주 하우스 밀감 1.4KG(박스)
+                        </p>
+                        <p>
+                          <span class="sajago_discount">19,980<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 9,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 2.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                          <li>신상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"> </span>스페인산 냉삼겹 1KG(봉)/돼지고기</p>
+                        <p>
+                          <span class="sajago_discount">19,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 9,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 3.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">★딱! ! 하루특가★<br /> </span>프리미엄 고시히카리 10KG(포)
+                        </p>
+                        <p>
+                          <span class="sajago_discount">49,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">40%</span> 29,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 4.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"> </span>힘을내라 구운란 30구</p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span> 8,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 5.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"> </span>농협목우촌 주부9단 오리 훈제 슬라이스</p>
+                        <p><span class="sajago_discount">13,990</span></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">28%</span> 9,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 6.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">3개 구매시 9,990원<br /> </span>해태 오예스 360G
+                        </p>
 
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span> 4,790</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 7.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">▷당당하게 가격비교<br /> </span>루컴즈 냉동고 161LFSG161H1
-                    </p>
-                    <p>
-                      <span class="sajago_discount">439,000<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 219,500</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/md 8.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">온라인 추가할인<br /> </span>양파 3KG(망)
-                    </p>
-                    <p>
-                      <span class="sajago_discount">5,490<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">15%</span> 4,660</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul id="sajago_fresh">
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 1.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>팔도진미 대구 북성로식 목심 구이 800G/돼지고기</p>
-                    <p>
-                      <span class="sajago_discount">13,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">30%</span> 9,790</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 2.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"> </span>해동 손질오징어(원양산:대서양/중) 마리</p>
-                    <p>
-                      <span class="sajago_discount">5,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 2,950</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 3.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>창녕 본 (本)깐마늘 500G(봉)</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span> 4,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 4.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"> </span>홈플식탁 한판 닭강정</p>
-                    <p>
-                      <span class="sajago_discount">15,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">12%</span> 13,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 5.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">과일 3만↑5천P적립<br /></span>신선농장 15Brix 샤인머스캣 1KG(박스)
-                    </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span> 4,790</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 7.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">▷당당하게 가격비교<br /> </span>루컴즈 냉동고 161LFSG161H1
+                        </p>
+                        <p>
+                          <span class="sajago_discount">439,000<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 219,500</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/md 8.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">온라인 추가할인<br /> </span>양파 3KG(망)
+                        </p>
+                        <p>
+                          <span class="sajago_discount">5,490<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">15%</span> 4,660</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-                    <p>
-                      <span class="sajago_discount">22,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">21%</span> 17,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 6.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>여덟단계선별 볶음용 멸치 250G</p>
-                    <p>
-                      <span class="sajago_discount">14,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 7,450</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 7.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>기회상품 국산 서리태 1KG</p>
-                    <p>
-                      <span class="sajago_discount">19,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 9,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/fresh 8.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>홈플식당 매콤깐풍 닭강정</p>
-                    <p>
-                      <span class="sajago_discount">15,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">12%</span> 13,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul id="sajago_food">
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 1.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                      <li>AI최저</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>정다운 허브를 담은 훈제오리 500G</p>
-                    <p>
-                      <span class="sajago_discount">14,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">40%</span> 8,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 2.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">과일 3만↑5천P적립<br /></span>초록사과 5-8입(봉)
-                    </p>
-                    <p>
-                      <span class="sajago_discount">12,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">23%</span> 9,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 3.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>냉동 흰다리 새우살(생) 기획팩(200G+200G) (꼬리X)</p>
-                    <p>
-                      <span class="sajago_discount">16,500<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">40%</span> 9,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 4.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">온라인 추가할인<br /></span>괴산 대학 찰옥수수 5입(망)
-                    </p>
-                    <p>
-                      <span class="sajago_discount">4,490<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">10%</span> 4,040</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 5.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>대짜 등심 찹쌀 탕수육</p>
+              <!-- 사자GO 새로고침bar -->
+              <div class="refreshBtnWrapper refreshBar">
+                <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span></button>
+              </div>
+            </div>
 
-                    <p>
-                      <span class="sajago_discount">15,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">18%</span> 12,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 6.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>보먹돼 등갈비 100G/돼지고기</p>
-                    <p>
-                      <span class="sajago_discount">2,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">40%</span> 1,680</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 7.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>[몽블랑제]슈가 파이 스틱 (10입)</p>
-                    <p>
-                      <span class="sajago_discount">5,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">30%</span> 4,130</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/food 8.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>오리지널 믹스넛 900G(통)</p>
-                    <p>
-                      <span class="sajago_discount">23,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 11,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul id="sajago_handy">
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 1.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>얌샘김밥 물쫄면 1130G</p>
-                    <p>
-                      <span class="sajago_discount">8,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">33%</span> 5,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 2.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">[물가안정365]<br /></span>홈플러스시그니처 칠레산 냉동 블루베리 1KG
-                    </p>
+            <!-- 신선한 -->
+            <div id="tab2" class="tab__content">
+              <div class="sajago_products">
+                <ul id="sajago_fresh">
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 1.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>팔도진미 대구 북성로식 목심 구이 800G/돼지고기</p>
+                        <p>
+                          <span class="sajago_discount">13,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">30%</span> 9,790</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 2.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"> </span>해동 손질오징어(원양산:대서양/중) 마리</p>
+                        <p>
+                          <span class="sajago_discount">5,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 2,950</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 3.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>창녕 본 (本)깐마늘 500G(봉)</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span> 4,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 4.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"> </span>홈플식탁 한판 닭강정</p>
+                        <p>
+                          <span class="sajago_discount">15,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">12%</span> 13,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 5.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">과일 3만↑5천P적립<br /></span>신선농장 15Brix 샤인머스캣 1KG(박스)
+                        </p>
 
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>8,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 3.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>남양 드빈치 슈레드 모짜렐라 피자치즈 1KG</p>
+                        <p>
+                          <span class="sajago_discount">22,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">21%</span> 17,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 6.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>여덟단계선별 볶음용 멸치 250G</p>
+                        <p>
+                          <span class="sajago_discount">14,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 7,450</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 7.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>기회상품 국산 서리태 1KG</p>
+                        <p>
+                          <span class="sajago_discount">19,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 9,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/fresh 8.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>홈플식당 매콤깐풍 닭강정</p>
+                        <p>
+                          <span class="sajago_discount">15,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">12%</span> 13,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 사자GO 새로고침bar -->
+              <div class="refreshBtnWrapper refreshBar">
+                <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">2</span><span class="totalIdx">/6</span></button>
+              </div>
+            </div>
+            <!-- 식품 -->
+            <div id="tab3" class="tab__content">
+              <!-- 식품사진 -->
+              <div class="sajago_products">
+                <ul id="sajago_food">
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 1.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                          <li>AI최저</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>정다운 허브를 담은 훈제오리 500G</p>
+                        <p>
+                          <span class="sajago_discount">14,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">40%</span> 8,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 2.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">과일 3만↑5천P적립<br /></span>초록사과 5-8입(봉)
+                        </p>
+                        <p>
+                          <span class="sajago_discount">12,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">23%</span> 9,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 3.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>냉동 흰다리 새우살(생) 기획팩(200G+200G) (꼬리X)</p>
+                        <p>
+                          <span class="sajago_discount">16,500<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">40%</span> 9,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 4.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">온라인 추가할인<br /></span>괴산 대학 찰옥수수 5입(망)
+                        </p>
+                        <p>
+                          <span class="sajago_discount">4,490<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">10%</span> 4,040</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 5.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>대짜 등심 찹쌀 탕수육</p>
 
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>12,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 4.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>동서 카누 미니 마일드 로스트 200T(180G)</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>33,400</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 5.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>함께할인</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">3개 구매시 9,990원<br /></span>크라운 버터와플 316G
-                    </p>
+                        <p>
+                          <span class="sajago_discount">15,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">18%</span> 12,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 6.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>보먹돼 등갈비 100G/돼지고기</p>
+                        <p>
+                          <span class="sajago_discount">2,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">40%</span> 1,680</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 7.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>[몽블랑제]슈가 파이 스틱 (10입)</p>
+                        <p>
+                          <span class="sajago_discount">5,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">30%</span> 4,130</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/food 8.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>오리지널 믹스넛 900G(통)</p>
+                        <p>
+                          <span class="sajago_discount">23,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 11,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="refreshBtnWrapper refreshBar">
+                <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">3</span><span class="totalIdx">/6</span></button>
+              </div>
+            </div>
+            <!-- 간편한 -->
+            <div id="tab4" class="tab__content">
+              <!-- 간편한 사진 -->
+              <div class="sajago_products">
+                <ul id="sajago_handy">
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 1.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>얌샘김밥 물쫄면 1130G</p>
+                        <p>
+                          <span class="sajago_discount">8,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">33%</span> 5,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 2.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">[물가안정365]<br /></span>홈플러스시그니처 칠레산 냉동 블루베리 1KG
+                        </p>
 
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span> 4,380</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 6.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                      <li>신상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>모구모구 리치맛 세븐틴 패키지 320ML*6</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>7,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 7.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">온라인만 할인<br /></span>코카콜라 캔 215ML*30
-                    </p>
-                    <p>
-                      <span class="sajago_discount">20,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">19%</span> 16,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/handy 8.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>해태 오예스 피스타치오 360G</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>4,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul id="sajago_industry">
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 1.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>CJ 햇반실속 210G*24</p>
-                    <p>
-                      <span class="sajago_discount">28,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">20%</span> 22,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 2.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>동원 리챔 120G*8</p>
-                    <span class="sajago_discount">19,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 9,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 3.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>팔도 왕뚜껑 110G*6</p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>8,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 3.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>남양 드빈치 슈레드 모짜렐라 피자치즈 1KG</p>
 
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>4,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 4.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>CJ 백설 압착 올리브유 900ML</p>
-                    <p>
-                      <span class="sajago_discount">26,500<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">25%</span> 19,800</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 5.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>함께할인</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">2개↑30% 할인<br /></span>농심 둥지냉면 동치미 물냉면 161G*4입
-                    </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>12,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 4.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>동서 카누 미니 마일드 로스트 200T(180G)</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>33,400</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 5.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>함께할인</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">3개 구매시 9,990원<br /></span>크라운 버터와플 316G
+                        </p>
 
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>6,650</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 6.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>CJ 백설 부침가루 1KG</p>
-                    <p>
-                      <span class="sajago_discount">3,380<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">30%</span> 2,340</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 7.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>슈가버블 원샷 베이직 세탁세제 2L</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>2,700</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/industry 8.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>3M 그물망사수세미 10입</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>9,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul id="sajago_house">
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 1.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>락앤락 마하 티타늄코팅 인덕션 겸용 웍 28CM</p>
-                    <p>
-                      <span class="sajago_discount">33,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">53%</span> 15,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 2.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>홈플러스시그니처 에코젠 스텐 밀폐용기 핸디형 3600ML</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span> 4,380</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 6.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                          <li>신상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>모구모구 리치맛 세븐틴 패키지 320ML*6</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>7,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 7.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">온라인만 할인<br /></span>코카콜라 캔 215ML*30
+                        </p>
+                        <p>
+                          <span class="sajago_discount">20,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">19%</span> 16,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/handy 8.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>해태 오예스 피스타치오 360G</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>4,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="refreshBtnWrapper refreshBar">
+                <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">4</span><span class="totalIdx">/6</span></button>
+              </div>
+            </div>
+            <!-- 가공필템 -->
+            <div id="tab5" class="tab__content">
+              <!-- 가공필템 사진 -->
+              <div class="sajago_products">
+                <ul id="sajago_industry">
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 1.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>CJ 햇반실속 210G*24</p>
+                        <p>
+                          <span class="sajago_discount">28,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">20%</span> 22,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 2.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>동원 리챔 120G*8</p>
+                        <span class="sajago_discount">19,990<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 9,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 3.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>팔도 왕뚜껑 110G*6</p>
 
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>13,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 3.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>사은품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">8/8~8/9 배송<br /></span>1만삼품권증정]한일 만능 다용도 전기탈수기 NW-Y2020
-                    </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>4,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 4.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>CJ 백설 압착 올리브유 900ML</p>
+                        <p>
+                          <span class="sajago_discount">26,500<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">25%</span> 19,800</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 5.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>함께할인</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">2개↑30% 할인<br /></span>농심 둥지냉면 동치미 물냉면 161G*4입
+                        </p>
 
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>99,000</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 4.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>지피니 야외용 석쇠 (대)</p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>1,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 5.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>레인보우 폴딩 스톨</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>6,650</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 6.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>CJ 백설 부침가루 1KG</p>
+                        <p>
+                          <span class="sajago_discount">3,380<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">30%</span> 2,340</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 7.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>슈가버블 원샷 베이직 세탁세제 2L</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>2,700</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/industry 8.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>3M 그물망사수세미 10입</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>9,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="refreshBtnWrapper refreshBar">
+                <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">5</span><span class="totalIdx">/6</span></button>
+              </div>
+            </div>
+            <!-- 생활용품 -->
+            <div id="tab6" class="tab__content">
+              <!-- 생활용품 사진 -->
+              <div class="sajago_products">
+                <ul id="sajago_house">
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 1.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>락앤락 마하 티타늄코팅 인덕션 겸용 웍 28CM</p>
+                        <p>
+                          <span class="sajago_discount">33,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">53%</span> 15,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 2.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>홈플러스시그니처 에코젠 스텐 밀폐용기 핸디형 3600ML</p>
 
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>9,900</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 6.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p><span class="sajago_red"></span>하이퍼터프 특대메탈랙 5단</p>
-                    <p>
-                      <span class="sajago_discount">135,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">40%</span> 81,480</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 7.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event"></ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">온라인 할인<br /></span>쿨플러스 경량 심리스 런닝브라
-                    </p>
-                    <p>
-                      <span class="sajago_discount">18,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
-                    </p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate">50%</span> 9,450</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="sajago_pro">
-                  <div class="sajago_thumb">
-                    <img src="image/go/household 8.jfif" alt="제품" />
-                  </div>
-                  <div class="sajago-dis">
-                    <ul class="sajago_event">
-                      <li>행사상품</li>
-                    </ul>
-                    <span>마트직송</span>
-                  </div>
-                  <div class="sajago_detail">
-                    <p>
-                      <span class="sajago_red">[물가안정365]<br /></span>홈플러스시그니처 베이직 물빠짐 욕실화(EVA) 그레이 270
-                    </p>
-                    <p></p>
-                    <p class="sajago_price">
-                      <strong><span class="sajago_rate"></span>2,990</strong><span>원</span>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- 사자GO 새로고침bar -->
-          <div class="refreshBtnWrapper refreshBar">
-            <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span></button>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>13,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 3.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>사은품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">8/8~8/9 배송<br /></span>1만삼품권증정]한일 만능 다용도 전기탈수기 NW-Y2020
+                        </p>
+
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>99,000</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 4.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>지피니 야외용 석쇠 (대)</p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>1,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 5.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>레인보우 폴딩 스톨</p>
+
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>9,900</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 6.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p><span class="sajago_red"></span>하이퍼터프 특대메탈랙 5단</p>
+                        <p>
+                          <span class="sajago_discount">135,800<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">40%</span> 81,480</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 7.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event"></ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">온라인 할인<br /></span>쿨플러스 경량 심리스 런닝브라
+                        </p>
+                        <p>
+                          <span class="sajago_discount">18,900<img src="image/ico_arrow_price_tooltip.png" alt="price" /></span>
+                        </p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate">50%</span> 9,450</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sajago_pro">
+                      <div class="sajago_thumb">
+                        <img src="image/go/household 8.jfif" alt="제품" />
+                      </div>
+                      <div class="sajago-dis">
+                        <ul class="sajago_event">
+                          <li>행사상품</li>
+                        </ul>
+                        <span>마트직송</span>
+                      </div>
+                      <div class="sajago_detail">
+                        <p>
+                          <span class="sajago_red">[물가안정365]<br /></span>홈플러스시그니처 베이직 물빠짐 욕실화(EVA) 그레이 270
+                        </p>
+                        <p></p>
+                        <p class="sajago_price">
+                          <strong><span class="sajago_rate"></span>2,990</strong><span>원</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="refreshBtnWrapper refreshBar">
+                <button type="button"><strong>다음 상품</strong> 새로보기 <span class="selectedIdx">6</span><span class="totalIdx">/6</span></button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <script>
-        $(document).ready(function () {
-          const on = $(".sajagotapbt").find("#selected").index();
-          let options = {
-            horizontal: 1,
-            itemNav: "centered", //basic , centered,
-            speed: 300,
-            smart: 1,
-            activateOn: "click",
-            mouseDragging: 1,
-            touchDragging: 1,
-            activateMiddle: 1,
-            releaseSwing: 1,
-            activeClass: "activetop",
-            startAt: on,
-            // itemSelector:1
-          };
 
-          let frame = new Sly(".sajagotapbt-wrapper", options).init();
-          // 탭클릭시 이벤트 핸들러 추가
-          $(".sajagotapbt button").on("click", function (e) {
-            e.preventDefault();
-            $(".sajagotapbt button").removeClass("active");
-            $(this).addClass("active");
-          });
-          // 초기 탭클릭 활성화
-          $(".sajagotapbt button").eq(0).trigger("click");
-        });
-      </script>
       <!-- 자주 찾게 되는 그 행사 -->
       <section class="event">
         <div class="inner">
           <div class="event-top">
             <h2>자주 찾게 되는 그 행사</h2>
           </div>
-          <div class="eventbar_wrap">
-            <div class="event-bar">
-              <button type="button" class="eventBtn selected">1+1</button>
-              <button type="button" class="eventBtn">천원의행복</button>
-              <button type="button" class="eventBtn">50%</button>
+          <!-- 이벤트 버튼 바 -->
+          <ul class="tab">
+            <li class="event__item active" id="tab1">1+1</li>
+            <li class="event__item" id="tab2">천원의행복</li>
+            <li class="event__item" id="tab3">50%</li>
+          </ul>
+
+          <!-- 이벤트 탭 내용 영역 -->
+          <div class="event__content-wrapper">
+            <div id="tab1" class="event__content active">
+              <!--1+1 사진 -->
+              <div class="event_products">
+               
+              </div>
+            </div>
+            <div id="tab2" class="event__content">
+              <!-- 천원의행복 사진 -->
+              <div class="event_products">
+
+              </div>
+            </div>
+            <div id="tab3" class="event__content">
+              <!-- 50% 사진 -->
+              <div class="event_products">
+
+              </div>
             </div>
           </div>
 
@@ -1768,7 +1787,7 @@
           <div class="oneplonebar">
             <a href="#" class="oneplonelink"
               ><button type="button" class="oneplonebtn">
-                <strong>1+1</strong> 더 많은 상품 보기 <span class="selectedIdx">1</span><span class="totalIdx">/6</span><i><img src="image/event/ico_fixed_event_right_arrow2x.png" alt="" class="event_more" /></i></button
+                <strong>1+1</strong> <span>더 많은 상품 보기</span><i><img src="image/event/ico_fixed_event_right_arrow2x.png" alt="" class="event_more" /></i></button
             ></a>
           </div>
         </div>
@@ -2258,12 +2277,22 @@
       <section class="curation">
         <div class="inner">
           <h2>놓치면 후회할 쇼핑 큐레이션</h2>
-          <div class="curation_btn">
-            <button class="selected">홈플델리</button>
-            <button class="curationBtn">아스크림</button>
-            <button class="curationBtn">향기뿜뿜</button>
-            <button class="curationBtn">청소해방</button>
+          <!-- 큐레이션 탭 버튼 영역 -->
+          <ul class="tab">
+            <li class="cur__item active" id="tab1">홈플델리</li>
+            <li class="cur__item" id="tab2">아스크림</li>
+            <li class="cur__item" id="tab3">향기뿜뿜</li>
+            <li class="cur__item" id="tab4">청소해방</li>
+          </ul>
+
+          <!-- 큐레이션 탭 내용 영역 -->
+          <div class="cur__content-wrapper">
+            <div id="tab1" class="cur__content active"></div>
+            <div id="tab2" class="cur__content"></div>
+            <div id="tab3" class="cur__content"></div>
+            <div id="tab4" class="cur__content"></div>
           </div>
+
           <div class="curation_products">
             <!-- 델리 -->
             <ul class="deli_pro">

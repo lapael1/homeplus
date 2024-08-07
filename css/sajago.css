@@ -33,6 +33,7 @@
     letter-spacing: -0.38px;
     white-space: nowrap;
 } */
+
 .sajagotapbt > .tapBtn {
   position: relative;
   margin-left: 8px;
@@ -54,6 +55,34 @@
   outline: 0px;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.tab__item {
+  padding: 0.6rem 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.tab__item.active {
+  display: inline-block;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+}
+.tab__content-wrapper {
+  padding: 1rem
+}
+.tab__content {
+  display: none;
+}
+.tab__content.active {
+  display: block;
+
 }
 
 /* 새로고침 바 */
@@ -92,9 +121,41 @@
 .sajago_products > ul {
   display: flex;
 
+
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sajago_products > #sajago_fresh{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.sajago_products > #sajago_food{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.sajago_products > #sajago_handy{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.sajago_products > #sajago_house{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.sajago_products > #sajago_industry{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+
 .sajago_products > ul > li {
   width: calc(100% / 4 - 10px);
   padding-bottom: 20px;
@@ -201,6 +262,11 @@
 #sajago_industry {
   display: none;
 }
+<
+/* #sajago_fresh,#sajago_food.active{
+  display: block;
+} */
+
 /* .sajago_food, .sajago_fresh, .sajago_handy, .sajago_house, .sajago_industry{
     display: none;
   } */

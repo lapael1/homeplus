@@ -84,6 +84,109 @@ window.addEventListener("load", function () {
     },
     offset: "95%",
   });
+  // 사자고 탭메뉴 버튼 효과
+  // 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
+const tabItem = document.querySelectorAll(".tab__item");
+const tabContent = document.querySelectorAll(".tab__content");
+
+// 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+// 이때 index도 같이 가져온다.
+tabItem.forEach((item, index) => {
+  // 탭 버튼에 클릭 이벤트를 준다.
+  item.addEventListener("click", (e) => {
+    // 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+    tabItem.forEach((item) => {
+      // 탭 버튼들의 active 클래스를 제거한다.
+      item.classList.remove("active");
+    });
+    // 클릭한 index의 탭 버튼에 active 클래스를 추가한다.
+    tabItem[index].classList.add("active");
+    
+    // 탭 버튼의 id값을 string으로 가져온다.
+    const tabItemId = String(item.id);
+    // 탭 내용 부분들을 forEach 문을 통해 한번씩 순회한다.
+    tabContent.forEach((item, index) => {
+      // 탭 내용 부분들 전부 active 클래스를 제거한다.
+      item.classList.remove("active");
+
+      // 탭 내용의 id값을 string으로 가져온다.
+      const tabContentId = String(item.id);
+      // 만약 탭 버튼의 id 값과 탭 내용의 id값이 같다면,
+      // 해당 탭 내용에 active 클래스를 추가한다.
+      if(tabContentId === tabItemId) {
+        tabContent[index].classList.add("active");
+      }
+    });
+  });
 });
+// 이벤트 탭메뉴 버튼 효과
+// 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
+const eventItem = document.querySelectorAll(".event__item");
+const eventContent = document.querySelectorAll(".event__content");
 
+// 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+// 이때 index도 같이 가져온다.
+eventItem.forEach((item, index) => {
+  // 탭 버튼에 클릭 이벤트를 준다.
+  item.addEventListener("click", (e) => {
+    // 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+    eventItem.forEach((item) => {
+      // 탭 버튼들의 active 클래스를 제거한다.
+      item.classList.remove("active");
+    });
+    // 클릭한 index의 탭 버튼에 active 클래스를 추가한다.
+    eventItem[index].classList.add("active");
+    
+    // 탭 버튼의 id값을 string으로 가져온다.
+    const eventItemId = String(item.id);
+    // 탭 내용 부분들을 forEach 문을 통해 한번씩 순회한다.
+    eventContent.forEach((item, index) => {
+      // 탭 내용 부분들 전부 active 클래스를 제거한다.
+      item.classList.remove("active");
 
+      // 탭 내용의 id값을 string으로 가져온다.
+      const eventContentId = String(item.id);
+      // 만약 탭 버튼의 id 값과 탭 내용의 id값이 같다면,
+      // 해당 탭 내용에 active 클래스를 추가한다.
+      if(eventContentId === eventItemId) {
+        eventContent[index].classList.add("active");
+      }
+    });
+  });
+// 큐레이션 탭메뉴 버튼 효과
+// 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
+const curItem = document.querySelectorAll(".cur__item");
+const curContent = document.querySelectorAll(".cur__content");
+
+// 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+// 이때 index도 같이 가져온다.
+curItem.forEach((item, index) => {
+  // 탭 버튼에 클릭 이벤트를 준다.
+  item.addEventListener("click", (e) => {
+    // 탭 버튼들을 forEach 문을 통해 한번씩 순회한다.
+    curItem.forEach((item) => {
+      // 탭 버튼들의 active 클래스를 제거한다.
+      item.classList.remove("active");
+    });
+    // 클릭한 index의 탭 버튼에 active 클래스를 추가한다.
+    curItem[index].classList.add("active");
+    
+    // 탭 버튼의 id값을 string으로 가져온다.
+    const curItemId = String(item.id);
+    // 탭 내용 부분들을 forEach 문을 통해 한번씩 순회한다.
+    curContent.forEach((item, index) => {
+      // 탭 내용 부분들 전부 active 클래스를 제거한다.
+      item.classList.remove("active");
+
+      // 탭 내용의 id값을 string으로 가져온다.
+      const curContentId = String(item.id);
+      // 만약 탭 버튼의 id 값과 탭 내용의 id값이 같다면,
+      // 해당 탭 내용에 active 클래스를 추가한다.
+      if(curContentId === curItemId) {
+        curContent[index].classList.add("active");
+      }
+    });
+  });
+});
+});
+});
