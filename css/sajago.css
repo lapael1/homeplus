@@ -1,23 +1,23 @@
 @charset "utf-8";
 /* 어머, 이건 꼭 사자! 사자GO */
 /* 로고 */
-.sajago{
-    padding-top: 50px;
-    display: block;
-    position: relative;
+.sajago {
+  padding-top: 50px;
+  display: block;
+  position: relative;
 }
-.sajagologo{
-    width: 100%;
-    height: 82px;
-    background: url(../image/tit_lion_165.png) left center / 375px no-repeat
+.sajagologo {
+  width: 100%;
+  height: 82px;
+  background: url(../image/tit_lion_165.png) left center / 375px no-repeat;
 }
-.sajagotapbt{
-    width: 1000px;
-    height: 60px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    /* background-color: aqua; */
+.sajagotapbt {
+  width: 1000px;
+  height: 60px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  /* background-color: aqua; */
 }
 /* .sajagotapbt > .selected {
     background-color: rgb(51, 51, 51);
@@ -34,169 +34,173 @@
     white-space: nowrap;
 } */
 .sajagotapbt > .tapBtn {
-    position: relative;
-    margin-left: 8px;
-    padding: 10px 6px;
-    min-width: 70px;
-    height: 40px;
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: rgb(246, 246, 246);
-    letter-spacing: -0.38px;
-    white-space: nowrap;
-    text-align: center;
+  position: relative;
+  margin-left: 8px;
+  padding: 10px 6px;
+  min-width: 70px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: rgb(246, 246, 246);
+  letter-spacing: -0.38px;
+  white-space: nowrap;
+  text-align: center;
 }
-.sajagotapbt > button{
-    color: rgb(0, 0, 0);
-    border: 0px;
-    /* background: none; */
-    cursor: pointer;
-    outline: 0px;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+.sajagotapbt > button {
+  color: rgb(0, 0, 0);
+  border: 0px;
+  /* background: none; */
+  cursor: pointer;
+  outline: 0px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* 새로고침 바 */
-.refreshBar{
-    padding: 10px 20px 0px;
-    margin: 0 auto;
-    width: 100%;
+.refreshBar {
+  padding: 10px 20px 0px;
+  margin: 0 auto;
+  width: 100%;
 }
-.refreshBar button{
-        width: 100%;
-        height: 40px;
-        text-align: center;
-        line-height: 14px;
-        border-radius: 3px;
-        border: 1px solid rgb(221, 221, 221);
-        background-color: rgb(255, 255, 255);
-        vertical-align: middle;
-        font-size: 13px;
+.refreshBar button {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
+  vertical-align: middle;
+  font-size: 13px;
 }
 .refreshBar button::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -2px;
-    width: 13px;
-    height: 13px;
-    margin-right: 5px;
-    background: url("/image/go/ico_refresh_main_feature2x.png") center center / 13px 13px no-repeat;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  background: url("/image/go/ico_refresh_main_feature2x.png") center center / 13px 13px no-repeat;
 }
 
 /* 사자고 제품 */
 .sajago_products {
-    padding-top: 10px;
-    letter-spacing: -1px;
-  }
-  .sajago_products > ul {
-    display: flex;
-  
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .sajago_products > ul > li {
-    width: calc(100% / 4 - 10px);
-    padding-bottom: 20px;
-  }
-  .sajago_thumb {
-    width: 100%;
-    position: relative;
-  }
-  .sajago_thumb img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  .sajago_thumb::after {
-    content: "";
-    background-image: url("../image/btn_card_general.png");
-    background-size: cover;
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .sajago-dis {
-    width: 100%;
-    height: 40px;
-    border-bottom: 1px solid #eee;
-    position: relative;
-  }
-  .sajago-dis span {
-    font-size: 14px;
-    color: #222;
-    font-weight: bold;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 13px;
-  }
-  .sajago_event {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    /* justify-content: space-around; */
-    align-items: center;
-  }
-  .sajago_event li {
-    background-color: #df0011;
-    color: white;
-    padding: 0 6px;
-    height: 20px;
-    font-size: 10px;
-    font-weight: bold;
-    border-radius: 20px;
-    line-height: 20px;
-    margin-right: 3px;
-  }
-  .sajago_red{
-    color: #df0011;
+  padding-top: 10px;
+  letter-spacing: -1px;
 }
-  .sajago_detail {
-    margin-top: 12px;
-  }
-  .sajago_detail {
-    color: #222;
-    font-size: 14px;
-  }
-  .sajago_detail p:first-child{
-    margin-top: 5px;
-    line-height: 1.29;
-  }
-  .sajago_detail p:nth-child(2) {
-    margin-top: 10px;
-    margin-bottom: 2px;
-  }
-  .sajago_discount {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 12px;
-  }
-  .sajago_discount img {
-    margin-left: 5px;
-    width: 14px;
-  }
-  .sajago_price {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .sajago_price > span:last-child {
-    font-size: 12px;
-  }
-  .sajago_rate {
-    color: #df0011;
-  }
-  /* .deli_pro > li:last-child {
+.sajago_products > ul {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sajago_products > ul > li {
+  width: calc(100% / 4 - 10px);
+  padding-bottom: 20px;
+}
+.sajago_thumb {
+  width: 100%;
+  position: relative;
+}
+.sajago_thumb img {
+  width: 100%;
+  border-radius: 8px;
+}
+.sajago_thumb::after {
+  content: "";
+  background-image: url("../image/btn_card_general.png");
+  background-size: cover;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  right: 0;
+  bottom: 0;
+}
+
+.sajago-dis {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.sajago-dis span {
+  font-size: 14px;
+  color: #222;
+  font-weight: bold;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+.sajago_event {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.sajago_event li {
+  background-color: #df0011;
+  color: white;
+  padding: 0 6px;
+  height: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  line-height: 20px;
+  margin-right: 3px;
+}
+.sajago_red {
+  color: #df0011;
+}
+.sajago_detail {
+  margin-top: 12px;
+}
+.sajago_detail {
+  color: #222;
+  font-size: 14px;
+}
+.sajago_detail p:first-child {
+  margin-top: 5px;
+  line-height: 1.29;
+}
+.sajago_detail p:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.sajago_discount {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+}
+.sajago_discount img {
+  margin-left: 5px;
+  width: 14px;
+}
+.sajago_price {
+  font-size: 18px;
+  font-weight: 500;
+}
+.sajago_price > span:last-child {
+  font-size: 12px;
+}
+.sajago_rate {
+  color: #df0011;
+}
+/* .deli_pro > li:last-child {
     margin-right: calc(100% / 4 + 3.3px);
   }
    */
 
-   /* 제품 카테고리 */
-  #sajago_food, #sajago_fresh, #sajago_handy, #sajago_house, #sajago_industry{
-    display: none;
-  }
-  /* .sajago_food, .sajago_fresh, .sajago_handy, .sajago_house, .sajago_industry{
+/* 제품 카테고리 */
+#sajago_food,
+#sajago_fresh,
+#sajago_handy,
+#sajago_house,
+#sajago_industry {
+  display: none;
+}
+/* .sajago_food, .sajago_fresh, .sajago_handy, .sajago_house, .sajago_industry{
     display: none;
   } */
