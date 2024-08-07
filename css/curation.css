@@ -4,6 +4,8 @@
   letter-spacing: -1px;
   padding-top: 80px;
   padding-bottom: 40px;
+  position: relative;
+  display: block;
 }
 .curation > .inner {
   padding: 0 20px;
@@ -23,11 +25,23 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.curation_products > .deli_pro{
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.curation_products > .ice_pro{
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .curation_products > ul > li {
   width: calc(100% / 4 - 10px);
   padding-bottom: 20px;
 }
-.cur_thumb {
+.cur_thumb{
   width: 100%;
   position: relative;
 }
@@ -35,6 +49,7 @@
   width: 100%;
   border-radius: 8px;
 }
+
 .cur_thumb::after {
   content: "";
   background-image: url("../image/btn_card_general.png");
@@ -219,50 +234,8 @@
   -webkit-tap-highlight-color: transparent;
 
 } */
-.curtapbt {
-  width: 1000px;
-  height: 60px;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-.curtapbt > .tapBtn1 {
 
-} */ 
-/* .curtapbt{
-width: 1000px;
-    height: 60px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-} */
-.curation_btn > .curationBtn{
 
-  position: relative;
-  margin-left: 8px;
-  padding: 10px 10px;
-  min-width: 70px;
-  height: 40px;
-  font-size: 15px;
-  border-radius: 20px;
-  background-color: rgb(246, 246, 246);
-  letter-spacing: -0.38px;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.curtapbt > button {
-
-.curation_btn > button{
-
-  color: rgb(0, 0, 0);
-  border: 0px;
-  /* background: none; */
-  cursor: pointer;
-  outline: 0px;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
 /* 액티브 시 나타날 효과 */
 .tab {
   display: flex;
@@ -270,22 +243,25 @@ width: 1000px;
   padding: 1rem;
 }
 .cur__item {
-  padding: 0.6rem 0.8rem;
+  padding: 12px;
   margin-right: 1rem;
-  border: 1px solid #ddd;
+  background-color: rgb(246, 246, 246);
+  font-size: 15px;
+  color: rgb(102, 102, 102);
   border-radius: 2rem;
+  letter-spacing: -0.37;
   cursor: pointer;
 }
 .cur__item.active {
   display: inline-block;
   border: none;
-  background-color: #000000;
+  background-color: #222;
   color: #fff;
-
-}
-=======
+  letter-spacing: -0.37;
   font-weight: bold;
 }
+
+  
 .cur__content-wrapper {
   padding: 1rem
 }
