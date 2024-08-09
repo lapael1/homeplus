@@ -1,15 +1,40 @@
 window.onload = function () {
+  
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
+    breakpoints:{
+      881:{
     slidesPerView: 4,
     spaceBetween: 10,
-
+    }
+    },
     navigation: {
       nextEl: ".banner .sw-next",
       prevEl: ".banner .sw-prev",
     },
     pagination: {
       el: ".sw-banner-pg ",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+  // 배너 스와이퍼 (반응형)
+  const swBanner2 = new Swiper(".sw-banner2", {
+    breakpoints:{
+      880:{
+    slidesPerView: 1,
+    }
+    },
+    navigation: {
+      nextEl: ".banner2 .sw-next",
+      prevEl: ".banner2 .sw-prev",
+    },
+    pagination: {
+      el: ".sw-banner2-pg ",
       clickable: true,
     },
     loop: true,
@@ -43,12 +68,26 @@ window.onload = function () {
 
   // 결제혜택 스와이퍼
   const swPayment = new Swiper(".sw-payment", {
-    slidesPerView: 5.4,
-    spaceBetween: 10,
+    // slidesPerView: 5.4,
+    // spaceBetween: 10,
     // 결제혜택 반응형
+    
     breakpoints:{
-      881:{
-        slidesPerView:6.3
+      900:{
+        slidesPerView:6.0,
+        spaceBetween : 10
+      },
+      600:{
+        slidesPerView:5.0,
+        spaceBetween : 10
+      },
+      450:{
+        spaceBetween: 10,
+        slidesPerView:4.0
+      },
+      300:{
+        slidesPerView:3.2,
+        spaceBetween: 10,
       }
     }
   });
