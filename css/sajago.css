@@ -183,6 +183,9 @@
 .sajago_detail p:first-child {
   margin-top: 5px;
   line-height: 1.29;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .sajago_detail p:nth-child(2) {
   margin-top: 10px;

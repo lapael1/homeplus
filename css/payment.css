@@ -3,6 +3,8 @@
     font-size: 20px;
     font-weight: bold;
     padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 /* 결제혜택 박스 */
@@ -20,7 +22,7 @@ position: relative;
     
 }
 .payment-slide{
-    padding-top: 50px;
+    padding-left: 20px;
 }
 .payment-wrap{
 
