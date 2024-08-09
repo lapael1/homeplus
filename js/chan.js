@@ -43,8 +43,14 @@ window.onload = function () {
 
   // 결제혜택 스와이퍼
   const swPayment = new Swiper(".sw-payment", {
-    slidesPerView: 6.3,
+    slidesPerView: 5.4,
     spaceBetween: 10,
+    // 결제혜택 반응형
+    breakpoints:{
+      881:{
+        slidesPerView:6.3
+      }
+    }
   });
 };
 
