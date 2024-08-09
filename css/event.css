@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-  width: 1000px;
+  max-width: 1000px;
 }
 .eventtab .tab li {
   text-align: center;
