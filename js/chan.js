@@ -15,14 +15,11 @@ window.onload = function () {
   });
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
-
-
-    breakpoints:{
-      881:{
-    slidesPerView: 4,
-    spaceBetween: 10,
-    }
-
+    breakpoints: {
+      881: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
     },
     navigation: {
       nextEl: ".banner .sw-next",
@@ -40,14 +37,10 @@ window.onload = function () {
   });
   // 배너 스와이퍼 (반응형)
   const swBanner2 = new Swiper(".sw-banner2", {
-
-
-    breakpoints:{
-      880:{
-    slidesPerView: 1,
-    }
-
-
+    breakpoints: {
+      880: {
+        slidesPerView: 1,
+      },
     },
     navigation: {
       nextEl: ".banner2 .sw-next",
@@ -86,10 +79,11 @@ window.onload = function () {
     // slidesPerView: 5.4,
     // spaceBetween: 10,
     // 결제혜택 반응형
-    slidesPerView:6,
-    spaceBetween:10
+
+    slidesPerView: 6,
+    spaceBetween: 10,
   });
-  
+
   // 추천 상품 스와이퍼
 const swRecommend = new Swiper(".sw-recommend", {
   slidesPerView: 5.6,
@@ -104,6 +98,7 @@ document.querySelector(".recommend .sw-next").addEventListener("click", function
 document.querySelector(".recommend .sw-prev").addEventListener("click",function(){
   swRecommend.slideTo(0)
 })
+
 
 const recomPrev = document.querySelector(".recommend .sw-prev")
 const recomNext = document.querySelector(".recommend .sw-next")
@@ -120,8 +115,6 @@ function UpdateBtn(){
   }
 }
 UpdateBtn()
-
-  
 };
 
 window.addEventListener("load", function () {
