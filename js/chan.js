@@ -1,4 +1,18 @@
 window.onload = function () {
+  // 스크롤 시 헤더 고정
+  $(function () {
+    var head = $(".header-down-tab").offset().top;
+
+    $(window).scroll(function () {
+      var window = $(this).scrollTop();
+
+      if (head <= window) {
+        $(".header-down-tab").addClass("fixed");
+      } else {
+        $(".header-down-tab").removeClass("fixed");
+      }
+    });
+  });
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
     breakpoints: {
@@ -65,10 +79,12 @@ window.onload = function () {
     // slidesPerView: 5.4,
     // spaceBetween: 10,
     // 결제혜택 반응형
+
     slidesPerView: 6,
     spaceBetween: 10,
   });
-// 추천 상품 스와이퍼
+
+  // 추천 상품 스와이퍼
 const swRecommend = new Swiper(".sw-recommend", {
   slidesPerView: 5.6,
   spaceBetween: 15,
@@ -82,6 +98,7 @@ document.querySelector(".recommend .sw-next").addEventListener("click", function
 document.querySelector(".recommend .sw-prev").addEventListener("click",function(){
   swRecommend.slideTo(0)
 })
+
 
 const recomPrev = document.querySelector(".recommend .sw-prev")
 const recomNext = document.querySelector(".recommend .sw-next")
@@ -98,9 +115,6 @@ function UpdateBtn(){
   }
 }
 UpdateBtn()
-
-
-
 };
 
 window.addEventListener("load", function () {

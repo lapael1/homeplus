@@ -24,6 +24,15 @@ position: relative;
 .payment-slide{
     padding-left: 20px;
 }
+
+.payment .swiper-slide{
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    height: 111px;
+    max-height: 111px;
+    min-height: 111px;
+}
 .payment-wrap{
 
     display: flex;

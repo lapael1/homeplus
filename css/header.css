@@ -37,6 +37,7 @@
   height: 50px;
   background: url("../header/images/default_logo.svg") no-repeat center / contain;
 }
+ 
 /* 호버버튼 */
 .hoverbox {
   display: flex;
@@ -141,11 +142,7 @@
   padding-left: 18px;
 }
 
-/* 헤더 하단 */
-.header-down {
-  width: 100%;
-  
-}
+
 .nav {
   position: relative;
   display: block;
@@ -256,34 +253,75 @@
   font-weight: 600;
   padding-right: 6px;
 }
-/* 검색/장바구니 */
-/* .css-beadyr .mainHeader .rightButtonBox {
-  display: flex;
-  padding-right: 20px;
-  height: 50px;
-  -webkit-box-align: center;
-  align-items: center;
+/* 헤더하단메뉴 */
+.header-down {
+  width: 100%;
+  
 }
-.css-mwwuiw {
-  display: block;
-  position: relative;
+.header-down-tab{
+  display: none;
+}
+.css-nld0qs {
+  position: absolute;
+  right: 6px;
+  top: 8px;
   width: 24px;
-  height: 24px;
-  font-size: 0px;
-  line-height: 0;
-  color: transparent;
-  background: url(/image/search_sub_header@2x.png) 0% 0% / 24px 24px no-repeat;
+  height: 28px;
+  background-color: rgb(255, 255, 255);
+  z-index: 3000;
 }
-.css-hego5z {
-  display: block;
-  position: relative;
+.css-nld0qs .headerMenuToggleBtn {
+  position: absolute;
   top: 0px;
-  left: 9px;
-  width: 33px;
-  height: 33px;
-  font-size: 0px;
-  line-height: 0;
-  color: transparent;
-  background: url(/image/cart@2x.png) 0px center / 24px 24px no-repeat;
-} */
- 
+  left: 0px;
+  width: 23px;
+  height: 23px;
+  border-radius: 3px;
+  background: rgb(238, 238, 238);
+  z-index: 10;
+}
+.css-nld0qs .headerMenuToggleBtn::before, .css-nld0qs .headerMenuToggleBtn::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  inset: 0px;
+  margin: auto;
+  background: rgb(51, 51, 51);
+}
+.css-3ty9yv {
+  display: none !important;
+}
+.css-nld0qs .headerMenuToggleBtn::after {
+  width: 1px;
+  height: 13px;
+}
+.headerMenuToggleBtn::before,.css-nld0qs .headerMenuToggleBtn::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -2px;
+  width: 47px;
+  height: 28px;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255) 39%);
+}
+.css-nld0qs .headerMenuToggleBtn::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  inset: 0px;
+  margin: auto;
+  background: rgb(51, 51, 51);
+}
+.css-nld0qs::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -2px;
+  width: 47px;
+  height: 28px;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255) 39%);
+}
