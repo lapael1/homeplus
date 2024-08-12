@@ -2,11 +2,13 @@ window.onload = function () {
   
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
+
     breakpoints:{
       881:{
     slidesPerView: 4,
     spaceBetween: 10,
     }
+
     },
     navigation: {
       nextEl: ".banner .sw-next",
@@ -24,10 +26,12 @@ window.onload = function () {
   });
   // 배너 스와이퍼 (반응형)
   const swBanner2 = new Swiper(".sw-banner2", {
+
     breakpoints:{
       880:{
     slidesPerView: 1,
     }
+
     },
     navigation: {
       nextEl: ".banner2 .sw-next",
@@ -60,36 +64,44 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
-  // 추천 상품 스와이퍼
-  const swRecommend = new Swiper(".sw-recommend", {
-    slidesPerView: 5.5,
-    spaceBetween: 15,
-  });
 
   // 결제혜택 스와이퍼
   const swPayment = new Swiper(".sw-payment", {
     // slidesPerView: 5.4,
     // spaceBetween: 10,
     // 결제혜택 반응형
-    
-    breakpoints:{
-      900:{
-        slidesPerView:6.0,
-        spaceBetween : 10
-      },
-      600:{
-        slidesPerView:5.0,
-        spaceBetween : 10
-      },
-      450:{
+
+
+    breakpoints: {
+      900: {
+        slidesPerView: 6.0,
         spaceBetween: 10,
-        slidesPerView:4.0
       },
-      300:{
-        slidesPerView:3.2,
+      600: {
+        slidesPerView: 5.0,
         spaceBetween: 10,
-      }
-    }
+      },
+      450: {
+        spaceBetween: 10,
+        slidesPerView: 4.0,
+      },
+      300: {
+        slidesPerView: 3.2,
+        spaceBetween: 10,
+      },
+    },
+  });
+  // 추천 상품 스와이퍼
+  const swRecommend = new Swiper(".sw-recommend", {
+    slidesPerView: 5,
+    spaceBetween: 15,
+    breakpoints: {
+      881: {
+        slidesPerView: 5.5,
+        spaceBetween: 15,
+      },
+    },
+
   });
 };
 
@@ -164,7 +176,7 @@ window.addEventListener("load", function () {
       });
     });
   });
-  
+
   // 이벤트 탭메뉴 버튼 효과
   // 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
   const eventItem = document.querySelectorAll(".event__item");

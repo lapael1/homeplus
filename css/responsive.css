@@ -77,6 +77,24 @@
   .quickmenu {
     display: none;
   }
+
+   /* event 반응형 */
+   .event_products > ul > li {
+    width: 100%;
+    height: 203px;
+  }
+  .event_products > ul > li:nth-child(n+3){
+    display: none;
+  }
+  .event_pro{
+    height: 203px;
+    width: 100%;
+  }
+  .event_thumb{
+    width: 138px;
+    float: left;
+  }
+
   /* recommend 반응형 */
   .recommend .sw-bt {
     display: none;
@@ -153,7 +171,13 @@
     word-spacing: 0;
     font-size: 11px;
   }
-}
-.footer_site {
-  display: none;
+
+  .footer_site {
+    display: none;
+  }
+  .footer_responsive{
+    display: block;
+  }
+
+
 }
