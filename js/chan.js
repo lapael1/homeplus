@@ -1,4 +1,18 @@
 window.onload = function () {
+  // 스크롤 시 헤더 고정
+  $(function () {
+    var head = $(".header-down-tab").offset().top;
+
+    $(window).scroll(function () {
+      var window = $(this).scrollTop();
+
+      if (head <= window) {
+        $(".header-down-tab").addClass("fixed");
+      } else {
+        $(".header-down-tab").removeClass("fixed");
+      }
+    });
+  });
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
 
@@ -72,39 +86,42 @@ window.onload = function () {
     // slidesPerView: 5.4,
     // spaceBetween: 10,
     // 결제혜택 반응형
-
-
-    breakpoints: {
-      900: {
-        slidesPerView: 6.0,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 5.0,
-        spaceBetween: 10,
-      },
-      450: {
-        spaceBetween: 10,
-        slidesPerView: 4.0,
-      },
-      300: {
-        slidesPerView: 3.2,
-        spaceBetween: 10,
-      },
-    },
+    slidesPerView:6,
+    spaceBetween:10
   });
+  
   // 추천 상품 스와이퍼
-  const swRecommend = new Swiper(".sw-recommend", {
-    slidesPerView: 5,
-    spaceBetween: 15,
-    breakpoints: {
-      881: {
-        slidesPerView: 5.5,
-        spaceBetween: 15,
-      },
-    },
+const swRecommend = new Swiper(".sw-recommend", {
+  slidesPerView: 5.6,
+  spaceBetween: 15,
+  on: {
+    slideChange: UpdateBtn, // 슬라이드가 변경될 때 버튼 상태 업데이트
+  },
+});
+document.querySelector(".recommend .sw-next").addEventListener("click", function () {
+  swRecommend.slideTo(swRecommend.slides.length - 1);
+});
+document.querySelector(".recommend .sw-prev").addEventListener("click",function(){
+  swRecommend.slideTo(0)
+})
 
-  });
+const recomPrev = document.querySelector(".recommend .sw-prev")
+const recomNext = document.querySelector(".recommend .sw-next")
+function UpdateBtn(){
+  if(swRecommend.activeIndex === 0){
+    recomPrev.classList.add("hidden");
+  }else{
+    recomPrev.classList.remove("hidden")
+  }
+  if(swRecommend.isEnd){
+    recomNext.classList.add("hidden")
+  } else {
+    recomNext.classList.remove("hidden")
+  }
+}
+UpdateBtn()
+
+  
 };
 
 window.addEventListener("load", function () {
