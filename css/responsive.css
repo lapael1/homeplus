@@ -29,14 +29,54 @@
     justify-content: center;
   }
 }
+.header-down-tab .nav{
+  position: relative;
+    background: rgb(255, 255, 255);
+}
+.header-down-tab .nav h3{
+  display: none;
+}
 @media screen and (max-width: 880px) {
   /* header 반응형 */
+  .header{
+    border-bottom: 1px solid rgb(238 ,238, 238);
+  }
+  .header-down{
+    display: none;
+  }
+  .header-down-tab{
+    list-style: none;
+    display: flex;
+  position: relative;
+    display: block;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
+    /* transition: 0.3s; */
+  }
+  .header-down-tab .nav{
+    padding-right: 37px;
+  }
+  .header-down-tab.fixed{
+    /* padding-top: 15px; */
+    list-style: none;
+    display: flex;
+    z-index: 4000;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  /* transition:  0.5s; */
+  }
   .header .inner {
     padding: 0;
     height: 95px;
   }
   .header-up-tab {
+    width: 100%;
     display: block;
+    z-index: 9999;
   }
   .member-list {
     display: none;
@@ -69,15 +109,27 @@
   .banner-slide .sw-bt {
     display: none;
   }
-  /* minibanner */
+  /* minibanner 반응형 */
   .mini-top-box {
     padding-top: 50px;
   }
+  .mini{
+    display: none;
+  }
+
   /* 퀵메뉴 반응형 */
   .quickmenu {
     display: none;
   }
-
+/* 미드배너이미지 반응형 */
+.midbanner-wrap{
+  display: block;
+}
+/* notice배너 이미지 반응형 */
+.noticebanner-wrap img{
+  display: block;
+  width: 100%;
+}
    /* event 반응형 */
    .event_products > ul > li {
     width: 100%;

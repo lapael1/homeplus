@@ -1,4 +1,15 @@
 @charset "utf-8";
+/* 미드배너이미지 */
+.midbanner-wrap{
+  display: none;
+}
+.midbanner-wrap img{
+  width: 100%;
+}
+/* notice배너 */
+.noticebanner-wrap img{
+  display: none;
+}
 /* 상단 */
 /* 좌측버튼 */
 .mini-top{

@@ -16,9 +16,11 @@
 .tab {
   display: flex;
   align-items: center;
+  min-width: 70px;
   padding: 1rem;
 }
 .tab__item {
+  text-align: center;
   padding: 12px;
   margin-right: 1rem;
   background-color: rgb(246, 246, 246);
@@ -27,6 +29,8 @@
   border-radius: 2rem;
   letter-spacing: -0.37;
   cursor: pointer;
+  min-width: 70px;
+  max-width: 100px;
 }
 .tab__item.active {
   display: inline-block;
