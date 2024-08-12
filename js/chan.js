@@ -1,7 +1,7 @@
 window.onload = function () {
-  
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
+
 
     breakpoints:{
       881:{
@@ -27,10 +27,12 @@ window.onload = function () {
   // 배너 스와이퍼 (반응형)
   const swBanner2 = new Swiper(".sw-banner2", {
 
+
     breakpoints:{
       880:{
     slidesPerView: 1,
     }
+
 
     },
     navigation: {

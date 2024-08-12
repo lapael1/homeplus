@@ -96,7 +96,7 @@
   }
 
   /* recommend 반응형 */
-  .recommend .sw-bt {
+  .recommend .sw-bt{
     display: none;
   }
   /* curation 반응형 */
@@ -107,7 +107,7 @@
   .deli_pro > li:last-child {
     margin-right: calc(100% / 2 + 10px);
   }
-  .cur__content-wrapper {
+  .cur__content-wrapper{
     padding: 0;
   }
 
@@ -116,6 +116,7 @@
     background-color: rgb(51, 51, 51);
     color: rgba(255, 255, 255, 0.5);
     border: none;
+    
   }
   .footer_link {
     border-top: none;
@@ -137,10 +138,10 @@
     padding: 0;
     margin: 0;
   }
-  .footer_cs > li:first-child {
+  .footer_cs > li:first-child{
     border: none;
   }
-  .footer_content h2 {
+  .footer_content h2{
     display: none;
   }
   .footer_link_left > li:nth-child(2),
@@ -159,7 +160,7 @@
     display: none;
     border: none;
   }
-  .footer_cs > li:last-child {
+  .footer_cs > li:last-child{
     display: none;
   }
   .footer_cs > li:first-child > ul > li:nth-child(3) {
