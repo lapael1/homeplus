@@ -1,11 +1,14 @@
 window.onload = function () {
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
-    breakpoints: {
-      881: {
-        slidesPerView: 4,
-        spaceBetween: 10,
-      },
+
+
+    breakpoints:{
+      881:{
+    slidesPerView: 4,
+    spaceBetween: 10,
+    }
+
     },
     navigation: {
       nextEl: ".banner .sw-next",
@@ -23,10 +26,14 @@ window.onload = function () {
   });
   // 배너 스와이퍼 (반응형)
   const swBanner2 = new Swiper(".sw-banner2", {
-    breakpoints: {
-      880: {
-        slidesPerView: 1,
-      },
+
+
+    breakpoints:{
+      880:{
+    slidesPerView: 1,
+    }
+
+
     },
     navigation: {
       nextEl: ".banner2 .sw-next",
@@ -66,6 +73,7 @@ window.onload = function () {
     // spaceBetween: 10,
     // 결제혜택 반응형
 
+
     breakpoints: {
       900: {
         slidesPerView: 6.0,
@@ -95,6 +103,7 @@ window.onload = function () {
         spaceBetween: 15,
       },
     },
+
   });
 };
 
