@@ -37,8 +37,14 @@ window.onload = function () {
   });
   // 추천 상품 스와이퍼
   const swRecommend = new Swiper(".sw-recommend", {
-    slidesPerView: 5.5,
+    slidesPerView: 5,
     spaceBetween: 15,
+    breakpoints: {
+      881: {
+        slidesPerView: 5.5,
+        spaceBetween: 15,
+      },
+    },
   });
 
   // 결제혜택 스와이퍼
@@ -46,11 +52,11 @@ window.onload = function () {
     slidesPerView: 5.4,
     spaceBetween: 10,
     // 결제혜택 반응형
-    breakpoints:{
-      881:{
-        slidesPerView:6.3
-      }
-    }
+    breakpoints: {
+      881: {
+        slidesPerView: 6.3,
+      },
+    },
   });
 };
 
@@ -125,7 +131,7 @@ window.addEventListener("load", function () {
       });
     });
   });
-  
+
   // 이벤트 탭메뉴 버튼 효과
   // 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
   const eventItem = document.querySelectorAll(".event__item");

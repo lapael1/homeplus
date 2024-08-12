@@ -22,4 +22,8 @@ window.addEventListener("load", function () {
   });
   //   사이트가 로드됐을때 기본값(활성화된 값)
   tabtitle[0].click();
+
+
+
+
 });
