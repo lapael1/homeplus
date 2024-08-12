@@ -16,7 +16,7 @@
 .tab {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .tab__item {
   padding: 12px;

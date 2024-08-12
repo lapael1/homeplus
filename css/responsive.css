@@ -94,6 +94,10 @@
     width: 138px;
     float: left;
   }
+  .event-dis, .event_detail{
+    width: calc(100% - 154px);
+    float: right;
+  }
 
   /* recommend 반응형 */
   .recommend .sw-bt{
