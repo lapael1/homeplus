@@ -130,6 +130,9 @@
   flex-wrap: wrap;
 }
 /* ~ 탭버튼 영역 */
+#sajtab{
+  
+}
 
 .sajago_products > ul > li {
   width: calc(100% / 4 - 10px);

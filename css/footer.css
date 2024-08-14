@@ -325,6 +325,7 @@
 
 
 /* 하단 네비게이션 바 */
+
 .css-5kjwrb {
   z-index: 4000;
   position: fixed;
@@ -335,7 +336,6 @@
   background: rgb(255, 255, 255);
   box-shadow: rgba(153, 153, 153, 0.1) 0px -2px 10px 0px;
 }
-.css-5kjwrb .navList {
 
 .ftNav{
   display: none;
@@ -441,6 +441,9 @@ font-weight: 500;
   height: 18px;
   margin-right: 5px;
 }
+.home{
+  color: rgb(223, 0, 17);
+}
 @media screen and (max-width: 880px) {
   .footer_responsive{
     display: block;
@@ -455,4 +458,3 @@ font-weight: 500;
   background-size: cover;
   margin: 0px auto;
 }
-

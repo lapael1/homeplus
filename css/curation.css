@@ -232,7 +232,7 @@
 }
 .cur__item {
   padding: 12px;
-  margin-right: 1rem;
+  margin-right: 8px;
   background-color: rgb(246, 246, 246);
   font-size: 15px;
   color: rgb(102, 102, 102);
@@ -240,7 +240,7 @@
   letter-spacing: -0.37;
   cursor: pointer;
   text-align: center;
-  min-width: 85px;
+  min-width: 80px;
 }
 .cur__item.active {
   display: inline-block;
