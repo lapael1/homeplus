@@ -235,6 +235,8 @@
   .footer_responsive{
     display: block;
   }
-
+.footer_company_info{
+  display: none;
+}
 
 }
