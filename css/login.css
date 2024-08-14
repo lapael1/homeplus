@@ -22,7 +22,10 @@ body {
     word-spacing: 0.1em;
     display: block;
     margin: auto;
+    height: 100%;
+    background-color: #f4f4f4;
 }
+
 a:link, a:visited {
     color: #666;
     text-decoration: none;
@@ -72,38 +75,86 @@ a{
     border: 1px solid #ddd;
     background-color: #fff;
 }
-/* 휴대폰/아이디 로그인 */
-.login-top .login{
+/* 아이디/휴대폰 */
+.join2.type .tab-ty2 {
     width: 480px;
     /* margin: 0; */
 }
-.login{
+.tab-ty2 {
     overflow: hidden;
     margin: 0 -15px;
 }
-.login li {
+.tab-ty2 li {
     float: left;
     width: 50%;
 }
-.login-top .login li a {
+.tab-ty2 li a {
     height: 70px;
     font-size: 18px;
     line-height: 70px;
     background: #fff;
     border-left: none;
 }
-.login-top .login li.on a {
+.tab-ty2 li.on a {
     border-bottom: 2px solid #333;
     color: #333;
 }
-.login .on a {
+.tab-ty2 .on a {
     position: relative;
     z-index: 1;
     border-bottom-color: #fff;
     background-color: #fff;
     color: #111;
 }
-.login li a {
-    display: block;
-    text-align: center;
+/* 필드셋 */
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0 solid transparent;
+}
+legend {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+}
+.join2.type ul.list-field {
+    margin-top: 36px;
+    margin-bottom: 0;
+}
+ul.list-field li {
+    position: relative;
+    width: 100%;
+    min-height: 36px;
+    padding: 9px 0;
+    border-bottom: 1px solid #ddd;
+    zoom: 1;
+}
+ul.list-field li.full .col {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+ul.list-field li .col:first-of-type label {
+    left: 0;
+}
+ul.list-field li .col label {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 9px;
+    padding-left: 6px;
+    font-size: 16px;
+    color: #999;
+    line-height: 36px;
+    white-space: nowrap;
+}
+label {
+    vertical-align: middle;
 }

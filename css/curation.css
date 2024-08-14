@@ -239,6 +239,8 @@
   border-radius: 2rem;
   letter-spacing: -0.37;
   cursor: pointer;
+  text-align: center;
+  min-width: 85px;
 }
 .cur__item.active {
   display: inline-block;
@@ -247,6 +249,7 @@
   color: #fff;
   letter-spacing: -0.37;
   font-weight: bold;
+  text-align: center;
 }
 
   
