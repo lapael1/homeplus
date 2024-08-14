@@ -6,6 +6,9 @@
     display: inline-block;
 
 }
+.main.showlist{
+    /* background-color: rgba(0,0,0,0.7) */
+}
 .banner2{
     display: none;
 }
