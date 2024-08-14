@@ -1,77 +1,77 @@
 @charset "utf-8";
 /* 미드배너이미지 */
-.midbanner-wrap{
+.midbanner-wrap {
   display: none;
   margin: 0 auto;
 }
-.midbanner-wrap img{
+.midbanner-wrap img {
   width: 100%;
 }
 /* notice배너 */
-.noticebanner-wrap img{
+.noticebanner-wrap img {
   display: none;
 }
 /* 상단 */
 /* 좌측버튼 */
-.mini-top{
-    position: relative;
-    display: block;
+.mini-top {
+  position: relative;
+  display: block;
 }
-.mini-top-box{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    cursor: pointer;
-    border-bottom: 8px solid rgb(246, 246, 246);
+.mini-top-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  cursor: pointer;
+  border-bottom: 8px solid rgb(246, 246, 246);
 }
-.mini-top-left{
-    width: 500px;
-    height: 88px;
-    position: relative;
-    display: flex;
-
+.mini-top-left {
+  width: 500px;
+  height: 88px;
+  position: relative;
+  display: flex;
 }
-.mini-mart-btn{
+.mini-mart-btn {
   width: 58px;
   height: 22px;
   color: #fff;
-font-weight: bold;
-font-size: 11px;
-background-color: rgb(223, 0, 17);
-border: none;
-border-radius: 100px;
-text-align: center;
-margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 11px;
+  background-color: rgb(223, 0, 17);
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  margin-bottom: 4px;
 }
-.mini-mart-hover{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align:center;
-    height: 64px;
-    font-size: 14px;
-    line-height: 1.4;
+.mini-mart-hover {
+  width: calc(100% - 216px);
+  padding-right: 23px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 64px;
+  font-size: 14px;
+  line-height: 1.4;
 }
-.mini-top-left img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 6px;
+.mini-top-left img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 6px;
 }
 
 /* 우측버튼 */
-.mini-top-right{
-    width: 500px;
-    height: 88px;
-    position: relative;
-    display: flex;
+.mini-top-right {
+  width: 500px;
+  height: 88px;
+  position: relative;
+  display: flex;
 }
 
-
-.mini-deliv-btn{
-     width: 58px;
-    height: 22px;
-    color: #fff;
+.mini-deliv-btn {
+  width: 58px;
+  height: 22px;
+  color: #fff;
   font-weight: bold;
   font-size: 11px;
   background-color: rgb(63, 178, 102);
@@ -80,46 +80,48 @@ margin-bottom: 4px;
   text-align: center;
   margin-bottom: 4px;
 }
-.mini-deliv-hover{
+.mini-deliv-hover {
+  width: calc(100% - 216px);
+  padding-right: 23px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align:center;
+  text-align: center;
   height: 64px;
   font-size: 14px;
   line-height: 1.4;
 }
-.mini-top-right img{
+.mini-top-right img {
   position: absolute;
   top: 0;
   right: 0;
   border-radius: 6px;
 }
-.cup{
+.cup {
   margin-right: 20px;
 }
 /* 미니배너부분 */
-.mini-slide{
+.mini-slide {
   margin: 10px 0px;
 }
 /* 스와이퍼 */
 .mini-slide .sw-prev {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-  }
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
 
-  .mini-slide .sw-next {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(50%, -50%);
-    z-index: 99;
-  }
-  .sw-mini a img{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 6px;
-  }
+.mini-slide .sw-next {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  z-index: 99;
+}
+.sw-mini a img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+}
