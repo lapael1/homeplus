@@ -1,18 +1,11 @@
 window.onload = function () {
-  // 스크롤 시 헤더 고정
-  $(function () {
-    var head = $(".header-down-tab").offset().top;
-
-    $(window).scroll(function () {
-      var window = $(this).scrollTop();
-
-      if (head <= window) {
-        $(".header-down-tab").addClass("fixed");
-      } else {
-        $(".header-down-tab").removeClass("fixed");
-      }
-    });
-  });
+//   const menuBt = document.querySelector(".category");
+//   const menuList = document.querySelector(".categorywrap");
+//   const wrap = document.querySelector(".main")
+//   menuBt.addEventListener("click", function () {
+//     menuList.classList.toggle("showlist");
+// wrap.classList.toggle("showlist")
+//   });
   // 배너 스와이퍼
   const swBanner = new Swiper(".sw-banner", {
     breakpoints: {
@@ -85,36 +78,35 @@ window.onload = function () {
   });
 
   // 추천 상품 스와이퍼
-const swRecommend = new Swiper(".sw-recommend", {
-  slidesPerView: 5.6,
-  spaceBetween: 15,
-  on: {
-    slideChange: UpdateBtn, // 슬라이드가 변경될 때 버튼 상태 업데이트
-  },
-});
-document.querySelector(".recommend .sw-next").addEventListener("click", function () {
-  swRecommend.slideTo(swRecommend.slides.length - 1);
-});
-document.querySelector(".recommend .sw-prev").addEventListener("click",function(){
-  swRecommend.slideTo(0)
-})
+  const swRecommend = new Swiper(".sw-recommend", {
+    slidesPerView: 5.6,
+    spaceBetween: 15,
+    on: {
+      slideChange: UpdateBtn, // 슬라이드가 변경될 때 버튼 상태 업데이트
+    },
+  });
+  document.querySelector(".recommend .sw-next").addEventListener("click", function () {
+    swRecommend.slideTo(swRecommend.slides.length - 1);
+  });
+  document.querySelector(".recommend .sw-prev").addEventListener("click", function () {
+    swRecommend.slideTo(0);
+  });
 
-
-const recomPrev = document.querySelector(".recommend .sw-prev")
-const recomNext = document.querySelector(".recommend .sw-next")
-function UpdateBtn(){
-  if(swRecommend.activeIndex === 0){
-    recomPrev.classList.add("hidden");
-  }else{
-    recomPrev.classList.remove("hidden")
+  const recomPrev = document.querySelector(".recommend .sw-prev");
+  const recomNext = document.querySelector(".recommend .sw-next");
+  function UpdateBtn() {
+    if (swRecommend.activeIndex === 0) {
+      recomPrev.classList.add("hidden");
+    } else {
+      recomPrev.classList.remove("hidden");
+    }
+    if (swRecommend.isEnd) {
+      recomNext.classList.add("hidden");
+    } else {
+      recomNext.classList.remove("hidden");
+    }
   }
-  if(swRecommend.isEnd){
-    recomNext.classList.add("hidden")
-  } else {
-    recomNext.classList.remove("hidden")
-  }
-}
-UpdateBtn()
+  UpdateBtn();
 };
 
 window.addEventListener("load", function () {
@@ -130,7 +122,7 @@ window.addEventListener("load", function () {
   });
   //   waypoint.js적용
   const waypoint_service = new Waypoint({
-    element: document.querySelector(".mini"),
+    element: document.querySelector(".mini-top-box"),
     handler: function (direction) {
       console.log(direction);
       if (direction === "down") {
@@ -190,6 +182,7 @@ window.addEventListener("load", function () {
   });
 
   // 이벤트 탭메뉴 버튼 효과
+  
   // 탭 버튼과 탭 내용 부분들을 querySelectorAll을 사용해 변수에 담는다.
   const eventItem = document.querySelectorAll(".event__item");
   const eventContent = document.querySelectorAll(".event__content");

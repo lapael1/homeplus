@@ -16,6 +16,7 @@
 .tab {
   display: flex;
   align-items: center;
+  overflow: hidden;
   /* padding: 1rem; */
   min-width: 70px;
 }
@@ -32,6 +33,7 @@
   cursor: pointer;
   min-width: 70px;
   max-width: 100px;
+  overflow: hidden;
 }
 .tab__item.active {
   display: inline-block;
@@ -40,6 +42,16 @@
   color: #fff;
   letter-spacing: -0.37;
   font-weight: bold;
+  
+}
+#tab1{
+  min-width: 85px;
+}
+#tab5{
+  min-width: 85px
+}
+#tab6{
+  min-width: 85px
 }
 .tab__content-wrapper {
   padding: 1rem;

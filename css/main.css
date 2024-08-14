@@ -49,8 +49,8 @@ html.active {
 /* gotop */
 .gotop {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 70px;
+  bottom: 50px;
   z-index: 9999;
   width: 45px;
   height: 45px;
