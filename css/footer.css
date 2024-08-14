@@ -334,6 +334,7 @@
 }
 
 /* 하단 네비게이션 바 */
+
 .css-5kjwrb {
   z-index: 4000;
   position: fixed;
@@ -348,6 +349,7 @@
 .ftNav {
   display: none;
 }
+
 .css-5kjwrb .navList .navItem .thumb {
   display: block;
   width: 24px;
@@ -355,3 +357,6 @@
   background-size: cover;
   margin: 0px auto;
 }
+
+
+
