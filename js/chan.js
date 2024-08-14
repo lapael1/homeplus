@@ -69,18 +69,16 @@ window.onload = function () {
 
   // 결제혜택 스와이퍼
   const swPayment = new Swiper(".sw-payment", {
-    // slidesPerView: 5.4,
-    // spaceBetween: 10,
-    // 결제혜택 반응형
+    
+    slidesPerView: 'auto', // 자동으로 슬라이드 개수 조정
+  spaceBetween: 10, // 슬라이드 간격
 
-    slidesPerView: 6,
-    spaceBetween: 10,
   });
 
   // 추천 상품 스와이퍼
   const swRecommend = new Swiper(".sw-recommend", {
-    slidesPerView: 5.6,
-    spaceBetween: 15,
+    slidesPerView: 'auto', // 자동으로 슬라이드 개수 조정
+  spaceBetween: 15, // 슬라이드 간격
     on: {
       slideChange: UpdateBtn, // 슬라이드가 변경될 때 버튼 상태 업데이트
     },
