@@ -300,6 +300,11 @@
     background-image: url(/image/nav\ 5.png);
   }
 
+.footer_company_info{
+  display: none;
+}
+
+
   .ftNav .navList .navItem .thumb {
     display: block;
     width: 24px;
@@ -313,6 +318,7 @@
     margin: 6px 7px 0px;
     line-height: 1.09;
   }
+
 
   .ftNav .navList button {
     color: rgb(0, 0, 0);
